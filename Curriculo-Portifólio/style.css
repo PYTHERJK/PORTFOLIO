@@ -1,0 +1,93 @@
+@import url('./componentes/variaveis.css');
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--cor-de-fundo);
+    font-size: 16px;
+}
+
+main {
+    background-color: var(--cor-de-fundo-2);
+    width: 45vw;
+    height: var(--altura-pagina);
+    margin: 0 auto;
+    padding: 3rem;
+    border-style: ridge;
+
+}
+
+.cabecalho {
+    display: flex;
+    column-gap: 1.5rem;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.nome {
+    text-align: center;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.icon {
+    width: 25px;
+}
+
+.icon:hover,
+.portifolio:hover {
+    transform: scale(1.2);
+    transition: 0.5s;
+}
+
+.portifolio {
+    text-align: center;
+    border: 1px solid var(--cor-fundo-portifolio);
+    width: 45%;
+    margin: 0 auto;
+    padding: .5rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 15px;
+    background: var(--cor-fundo-portifolio);
+    color: white;
+    letter-spacing: 0.09rem;
+}
+
+
+.curriculo__texto {
+    list-style: none;
+    line-height: 1.2rem;
+}
+
+.subtitulo {
+    font-weight: bold;
+    margin: 1rem 0;
+}
+
+.pessoais {
+    margin: 3.5rem 0 0.1rem 0;
+}
+
+@media screen and (max-width: 1020px) {
+
+    body {
+        font-size: 12px;
+    }
+
+    main {
+        height: 100%;
+        width: 100vw;
+        padding: 1.3rem 1rem;
+    }
+
+    .cabecalho li .nome{
+        font-size: 10px;
+    }
+
+    .portifolio a{
+        font-size: 10px;
+    }
+
+
+}
