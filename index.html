@@ -1,61 +1,270 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- CÓDIGO DO GOOLGLE FONTS-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css"
+    />
+    <!-- link dos bootstrap-icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hedvig+Letters+Sans&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- colocar javascript no código -->
+    <!-- defer serve para carregar o JS somente quando a página for totalmente carregaa -->
+    <script src="Js/menu.js" defer></script>
+    <!--FIM CÓDIGO DO GOOGLE FONTS-->
+    <title>Portifólio</title>
+  </head>
+  <body>
+    <header>
+      <div class="interface">
+        <div class="logo">
+          <a href="#">
+            <img src="logo/logo.png" alt="logo" />
+          </a>
+        </div>
+        <!--logotipo-->
+        <nav class="menu-desktop">
+          <ul>
+            <li><a href="#">Início</a></li>
+            <li><a href="#especialidades">Especialidades</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#projetos">Projetos</a></li>
+          </ul>
+        </nav>
+        <div class="btn-contato">
+          <a href="#contato">
+            <button>Contato</button>
+          </a>
+        </div>
+        <!---interface-->
+        <div class="btn-abrir-menu" id="btn-menu">
+          <i class="bi bi-list"></i>
+        </div>
+        <!-- MENU DO MOBILE -->
+        <div class="menu-mobile" id="menu-mobile">
+          <div class="btn-fechar">
+            <i class="bi bi-x-lg"></i>
+          </div>
+          <nav>
+            <ul>
+              <li><a href="#">Início</a></li>
+              <li><a href="#especialidades">Especialidades</a></li>
+              <li><a href="#sobre">Sobre</a></li>
+              <li><a href="#projetos">Projetos</a></li>
+              <li><a href="#contato">Contato</a></li>
+            </ul>
+          </nav>
+        </div>
+        <!-- DIV PARA ESCURECER A TELA QUANDO O MENU ABRIR -->
+        <div class="overlay-menu" id="overlay-menu"></div>
+      </div>
+    </header>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
-    <!-- <link rel="stylesheet" href="mobile/mobile.css"> -->
-    <title>Curriculo</title>
-</head>
-
-<body>
     <main>
-        <ul class="cabecalho">
-            <li>
-                <a href="https://www.linkedin.com/in/allan-pyther/" target="_blank"><img src="icon/linkedin.png"
-                        alt="Logo do linkedin" class="icon"></a>
-            </li>
-            <li>
-                <div class="cabecalho__item nome">ALLAN PYTHER PEREIRA DE SOUZA</div>
-            </li>
-            <li>
-                <a href="https://github.com/PYTHERJK" target="_blank"><img src="icon/github.png" alt=""
-                        class="icon"></a>
-            </li>
-        </ul>
-        <div class="portifolio"><a href="https://pytherjk.github.io/PORTFOLIO/">visite meu portifólio :-)</a></div>
+      <section class="topo-do-site">
+        <div class="interface">
+          <div class="flex">
+            <div class="txt-topo-site">
+              <h1>
+                ANALISTA DE SISTEMAS - DESENVOLVEDOR FRONT-END<span>.</span>
+              </h1>
+              <p>
+                Experiência de 2 anos como Analista de Sistemas pela Linx
+                Sistemas e Consultoria LTDA, atuei em sistemas como Linx POS e
+                Microvix, analisando demandas de problemas no sistema e
+                tratando-os; Adquiri também amplo conhecimento em manipulação
+                de dados em banco SQL.
+              </p>
+              <div class="btn-contato">
+                <a href="https://pytherjk.github.io/MyCurriculum/">
+                  <button>Veja meu currículo</button>
+                </a>
+              </div>
+            </div>
+            <div class="img-topo-site">
+              <img src="images/foto-perfil.jpg" alt="imagem de pefil" />
+            </div>
+          </div>
+        </div>
+      </section>
 
-        <ul class="curriculo__dados">
-            <li class="curriculo__texto subtitulo pessoais">Dados Pessoais:</li>
-            <li class="curriculo__texto">Brasileiro, solteiro, 24 anos</li>
-            <li class="curriculo__texto">(31) 99336-5651</li>
-            <li class="curriculo__texto no-mobile">pytherpereira17@gmail.com</li>
-            <li class="curriculo__texto">Objetivo: Desenvolvedor Front End Jr</li>
-            <li class="curriculo__texto subtitulo">Formação Acadêmica</li>
-            <li class="curriculo__texto">Técnico em Informática – Grau Técnico</li>
-            <li class="curriculo__texto subtitulo">Cursos – Competências</li>
-            <li class="curriculo__texto">Certificação Microvix - Linx Academy</li>
-            <li class="curriculo__texto">Certificação Linx POS - Linx Academy</li>
-            <li class="curriculo__texto">Inglês Intermediário – Wise Up Online</li>
-            <li class="curriculo__texto">HTML5, CSS3 – Alura</li>
-            <li class="curriculo__texto">Sass (Linguagem de Programação para CSS) - Alura</li>
-            <li class="curriculo__texto no-mobile">Manutenção de Desktop’s e Notebooks – Grau Técnico</li>
-            <li class="curriculo__texto">Algoritimos – Curso em Vídeo</li>
-            <li class="curriculo__texto no-mobile">Banco de Dados – Grau Técnico</li>
-            <li class="curriculo__texto">Programação (Java, Python, PHP) – Grau Técnico</li>
-            <li class="curriculo__texto no-mobile">Gestão de Projetos – Grau Técnico</li>
-            <li class="curriculo__texto">Lógica de Programação – Prepara Cursos</li>
-            <li class="curriculo__texto no-mobile">Arquitetura de Computadores – Grau Técnico</li>
-            <li class="curriculo__texto">Fundamentos de Testes – Grau Técnico</li>
-            <li class="curriculo__texto subtitulo">Experiência Profissional</li>
-            <li class="curriculo__texto">Manutenção de Desktop’s e Notebooks – Autônomo</li>
-            <li class="curriculo__texto">Analista de Suporte a Sistemas – Linx Sistemas (Atualmente)</li>
-        </ul>
+      <section class="especialidades" id="especialidades">
+        <div class="interface">
+          <h2 class="titulo">MINHAS <span>ESPECIALIDADES.</span></h2>
+          <div class="flex">
+            <div class="especialidades-box">
+              <i class="bi bi-filetype-html"></i
+              ><i class="bi bi-filetype-css"></i
+              ><i class="bi bi-filetype-js"></i>
+              <h3>Landing pages</h3>
+              <p>
+                Venho me especializado na criação de sites landing pages, com a
+                utilização de HTML, CSS e JavaScript, criando várias páginas
+                para testar meu conhecimento, alguns destes projetos você
+                encontrará no tópico 'Meu Portifólio'.
+              </p>
+            </div>
+            <div class="especialidades-box">
+              <i class="bi bi-filetype-sql"></i>
+              <i class="bi bi-file-earmark-text"></i>
+              <h3>Análise de Sistemas</h3>
+              <p>
+                Trabalhei em tratativas de sistemas ERP de grande renome no
+                mercado, analisando, documentando e tratando problemas do mesmo,
+                atuando tambem no banco de dados dos sistemas com forte
+                utilização de linguagem SQL.
+              </p>
+            </div>
+            <div class="especialidades-box">
+              <i class="bi bi-laptop"></i>
+              <i class="bi bi-pc-display"></i>
+              <h3>Manutenção de Computadores</h3>
+              <p>
+                Autando como autônomo nas horas vagas em montagem e
+                manutenção(preventiva e corretiva) há 7 anos.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="sobre" id="sobre">
+        <div class="interface">
+          <div class="flex">
+            <div class="img-sobre">
+              <img src="images/perfl-completo.jpeg" alt="" />
+            </div>
+            <div class="txt-sobre">
+              <h2>MUITO PRAZER, <span>SOU ALLAN PYTHER.</span></h2>
+              <p>
+                Gosto de assistir animes, jogar games e treinar na academia,
+                odeio perder e estou sempre tentendo me superar;Buscando sempre
+                conhecimento, com a visão de ser melhor do que eu era no dia
+                anterior; Estudioso, compentente, persistente e confiante, nesta
+                página você encontrará um pouco do que venho estudando e
+                colocando em prática. <br>
+                Venho buscando me especializar em Front-End para atuar como dev, abaixa você encontrará alguns de meus projetos
+              </p>
+
+              <div class="btn-social">
+                <a href="https://github.com/PYTHERJK" target="_blank">
+                  <button><i class="bi bi-github"></i></button>
+                </a>
+                <a href="">
+                  <button><i class="bi bi-facebook"></i></button>
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/allan-pyther/"
+                  target="_blank"
+                >
+                  <button><i class="bi bi-linkedin"></i></button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="portifolio" id="projetos">
+        <div class="interface">
+          <h2 class="titulo">MEU <span>PORTIFÓLIO</span></h2>
+          <div class="flex">
+            <!-- colocar imagem na div -->
+            <div
+              class="img-port"
+              style="background-image: url(images/7daysofcode.png)"
+            >
+              <a
+                href="https://pytherjk.github.io/7DaysOfCode-HTML-CSS/"
+                target="_blank"
+                ><div class="overlay">7DaysOfCode</div></a
+              >
+            </div>
+            <div
+              class="img-port"
+              style="background-image: url(images/aluraBooks.png)"
+            >
+              <a href="https://pytherjk.github.io/alurabook/" target="_blank"
+                ><div class="overlay">Alura Books</div></a
+              >
+            </div>
+            <div class="img-port" style="background-image: url(images/gerador-de-senhas.png)">
+              <a href="#" target="_blank"><div class="overlay">Gerador de Senhas</div></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="formulario" id="contato">
+        <div class="interface">
+          <h2 class="titulo">FALE <span>COMIGO.</span></h2>
+          <!-- FORMULÁRIO -->
+          <form action="">
+            <input
+              type="text"
+              name=""
+              id=""
+              placeholder="Seu nome completo:"
+              required
+            />
+            <input type="text" name="" id="" placeholder="Seu e-mail:" />
+            <input type="text" name="" id="" placeholder="Seu celular:" />
+            <textarea
+              name=""
+              id=""
+              placeholder="Sua mensagem"
+              required
+            ></textarea>
+            <div class="btn-enviar"><input type="submit" value="ENVIAR" /></div>
+          </form>
+        </div>
+      </section>
+
+      <footer>
+        <div class="interface">
+          <div class="line-footer">
+            <div class="flex">
+              <div class="logo-footer">
+                <img src="logo/logo.png" alt="logo" />
+              </div>
+              <div class="btn-social">
+                <a href="https://github.com/PYTHERJK" target="_blank">
+                  <button><i class="bi bi-github"></i></button>
+                </a>
+                <a href="">
+                  <button><i class="bi bi-facebook"></i></button>
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/allan-pyther/"
+                  target="_blank"
+                >
+                  <button><i class="bi bi-linkedin"></i></button>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="line-footer borda">
+            <p>
+              <i class="bi bi-envelope-fill"></i
+              ><a href="mailto:pytherpereira17@gmail.com"
+                >pytherpereira17@gmail.com</a
+              >
+            </p>
+          </div>
+        </div>
+      </footer>
     </main>
-
-</body>
-
+  </body>
 </html>
